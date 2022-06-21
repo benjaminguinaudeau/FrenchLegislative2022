@@ -1,0 +1,26 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# FrenchLegislative2022
+
+Ce dossier contient les résultats du second tour des élections législatives 2022 tels que [publiés par le ministère de l'intérieur](https://www.resultats-elections.interieur.gouv.fr/legislatives-2022/index.html) le lundi 20 juin. 
+
+Les résultats concernent 534 circonscriptions et excluent les résultats d'outre-mer ainsi que les circonscriptions des français de l'étranger. 
+
+
+```{r}
+dplyr::glimpse(readr::read_rds("legi2022.rds"))
+```
+
+
+
